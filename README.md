@@ -57,11 +57,20 @@ your-project/
 │   ├── agents/                     → custom agents
 │   │   ├── reviewer.md              
 │   │   └── backend-architect.md    
-│   ├── skills/                     
-│   │   └── update-readme/
-│   │       └── SKILL.md            → skill + optional scripts 
-│   └── commands/                   → reusable slash commands
-│       └── create-component.md      
+│   │ 
+│   ├── skills/                     → sematically triggered 
+│   │   └── update-readme/          → skill + optional scripts 
+│   │       └── SKILL.md            
+│   ├── rules/                     → semantically triggered
+│   │   ├── code-style.md              
+│   │   └── testing.md  
+│   │ 
+│   ├── commands/                   → reusable slash commands
+│   │   ├── fix-issue.md   
+│   │   └── review.md  
+│   │ 
+│   └── hooks/                      → event driven (pre/post)
+│       └── validate-bash.sh                
 
 ~/.claude/                          → personal, NOT committed
 ├── CLAUDE.md                       → machine-specific preferences
@@ -153,8 +162,15 @@ Both are genuinely useful. One scales further. The choice, as always, depends on
 
 ---
 ## Interesting Community Examples:
+
+- https://skills.sh
+- skill evaluation: https://skills.sh/anthropics/skills/skill-creator
 - https://github.com/github/awesome-copilot
 - https://github.com/anthropics/skills
 - https://github.com/pamelafox/office-hours-writeups/tree/main/.github
+- https://github.com/Azure-Samples/python-agentframework-demos/tree/main/.github
 - Copilot multi-agent orchestration: https://youtu.be/-BhfcPseWFQ?si=8orl4QpsdbGSkjpP
+
+---
+![claude_folder_structure](claude_folder_structure.png)
 
